@@ -1,0 +1,15 @@
+---
+resources:
+  - name: project-101
+    type: git
+    source:
+      uri: https://github.com/jijukjose/project-101.git
+      branch: development
+
+jobs:
+  - name: job-hello-world
+    public: true
+    plan:
+      - get: project-101
+      - task: hello-world
+        file: project-101/frontend/api/ci/buildfrontend.yml
