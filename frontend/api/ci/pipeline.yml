@@ -12,4 +12,4 @@ jobs:
     plan:
       - get: project-101
       - task: hello-world
-        file: project-101/frontend/api/ci/buildfrontend.yml
+        file: project-101/frontend/api/ci/task.yml
